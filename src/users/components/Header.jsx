@@ -159,7 +159,7 @@ function Header() {
               >
                 <img
                   src={userD.Profile==''? "https://cdn-icons-png.flaticon.com/512/149/149071.png": `${serverUrl}/upload/${userD.Profile}`}
-                  className="mx-2"
+                  className="mx-2 rounded-full"
                   alt=""
                   style={{ width: "40px", height: "40px" }}
                 />

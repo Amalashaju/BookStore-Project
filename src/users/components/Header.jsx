@@ -219,7 +219,7 @@ function Header() {
             {" "}
             <li>Careers</li>
           </Link>
-          <li>Contact</li>
+         <Link to={'/contact'}> <li>Contact</li></Link>
         </ul>
       </nav>
     </>

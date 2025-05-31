@@ -92,6 +92,15 @@ function Auth({ register }) {
         });
       }
 
+      else if (result.status == 404) {
+        toast.warning(result.response.data);
+        setUserDetails({
+          username: "",
+          email: "",
+          password: "",
+        });
+      }
+
       else {
         toast.error("Something went wrong");
         setUserDetails({

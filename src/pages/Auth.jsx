@@ -79,11 +79,11 @@ function Auth({ register }) {
           else {
             navigate('/')
           }
-        })
+        },2500)
 
 
       }
-      else if (result.status == 401 || result.status == 404) {
+      else if (result.status == 401) {
         toast.warning(result.response.data);
         setUserDetails({
           username: "",
